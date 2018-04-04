@@ -143,6 +143,7 @@ export default class HomePage extends React.Component {
 											<div className={item.more? 'col-md-4 col-sm-12 article-item no-overflow' : 'col-md-4 article-item'} key={index}>
 												<h5 className='article-item-title'>{item.name}</h5>
 												<p>{item.more}</p>
+												<p>lol</p>
 												<blockquote>
 													{item.fields.map((field, index)  => {
 														return (
