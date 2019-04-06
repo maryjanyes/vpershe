@@ -4,6 +4,11 @@ path: game1
 title: Game1
 steps:
   - body: |-
+      Hello World!
+
+      Some videos for this game will be here.
+    title: Intro step
+  - body: |-
       You need go home probably, with kind of transport you get?
 
       1. You will going by bus.
