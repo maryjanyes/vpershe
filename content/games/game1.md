@@ -6,7 +6,8 @@ steps:
   - body: |-
       Hello World!
 
-      Some videos for this game will be here.\
+      Some videos for this game will be here.
+
       <iframe src="https://youtu.be/F1B9Fk_SgI0"></iframe>
 
       ![]()
