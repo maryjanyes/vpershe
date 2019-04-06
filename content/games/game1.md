@@ -10,5 +10,7 @@ steps:
       2. By taxi.
       3. WALKING.
     title: Going outside night club after big fun party
+  - body: '_Congrats, you complete game :)_'
+    title: Final step
 ---
 
