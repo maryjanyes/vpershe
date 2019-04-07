@@ -21,9 +21,17 @@ export default class VpersheNav extends React.Component {
   }
 
   render() {
+
+    const mockedLinkToGames = {
+      text: "Games",
+      url: "/games"
+    };
     const {
       className, links, location, socialIcons
     } = this.props;
+    if (!links.find((elem) => elem.text === "Games")) {
+      links.push(mockedLinkToGames);
+    }
     const { isOpen } = this.state;
     const navClasses = classNames('nav', {
       'nav--expanded': isOpen,

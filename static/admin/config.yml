@@ -1,12 +1,33 @@
 backend:
   name: github
-  repo: vstanyshevskyy/vpershe
+  repo: maryjanyes/vpershe
   branch: main
 
 media_folder: "static/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  - name: games
+    label: Інтерактив та ігри
+    folder: "content/games"
+    filter: {field: "contentType", value: "games"}
+    create: true
+    fields:
+      - {label: "Type", name: "contentType", widget: "hidden", default: "games"}
+      - {label: "Url", name: "path", widget: "string"}
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Game banner url", name: "bannerUrl", widget: "string"}
+      - label: "steps"
+        name: "steps"
+        widget: "list"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Текст", name: "body", widget: "markdown"} 
+          - {label: "Час публікації", name: "publishTime", required: false, widget: "datetime"}
+          - {label: "Meta Keywords", name: "metaKeywords", widget: "string", required: false}
+          - label: "Game steps"
+            name: "steps"
+            widget: "list"
   - name: articles
     label: Статті
     folder: "content/content"
